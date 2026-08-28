@@ -1,0 +1,21 @@
+#include <iostream>
+int main() {
+	unsigned int age;
+	float weight;
+	double money;
+	char currency;
+
+	std::cout << "How old are you?" << std::endl;
+	std::cin >> age;
+	
+	std::cout << "How many kg are you?" << std::endl;
+	std::cin >> weight;
+
+	std::cout << "How much money have you got?" << std::endl;
+	std::cin >> money;
+
+	std::cout << "Which currency? ($, €, £ or etc.)\n";
+	std::cin >> currency;
+
+	std::cout << "\nAge: " << age << std::endl << "Weight: " << weight << std::endl << "Cash: " << money << currency;
+}
