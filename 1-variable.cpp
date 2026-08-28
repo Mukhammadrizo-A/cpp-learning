@@ -1,25 +1,23 @@
-#include iostream
+#include <iostream>
 int main() {
 	unsigned int age;
 	float weight;
 	double money;
 	char currency;
-	bool happy;
 
-	stdcout  How old are you  stdendl;
-	stdcin  age;
+	std::cout << "How old are you?" << std::endl;
+	std::cin >> age;
 	
-	stdcout  How many kg are you  stdendl;
-	stdcin  weight;
+	std::cout << "How many kg are you?" << std::endl;
+	std::cin >> weight;
 
-	stdcout  How much money have you got  stdendl;
-	stdcin  money;
+	std::cout << "How much money have you got?" << std::endl;
+	std::cin >> money;
 
-	stdcout  Which currency ($, €, £ or etc.)n;
-	stdcin  currency;
+	std::cout << "Which currency? ($, €, £ or etc.)\n";
+	std::cin >> currency;
 
-	std::cout << "How are you? (Happy = true / unhappy = false) << std::endl;
-	sdt::cin >> happy;
-		
-	stdcout  nAge   age  stdendl  Weight   weight  stdendl  Cash   money  currency << std::endl << "Happy: " << happy;
+	std::cout << "\nAge: " << age << std::endl << "Weight: " << weight << std::endl << "Cash: " << money << currency;
+
+	return 0;
 }
