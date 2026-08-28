@@ -4,6 +4,7 @@ int main() {
 	float weight;
 	double money;
 	char currency;
+	bool happy;
 
 	stdcout  How old are you  stdendl;
 	stdcin  age;
@@ -17,5 +18,8 @@ int main() {
 	stdcout  Which currency ($, €, £ or etc.)n;
 	stdcin  currency;
 
-	stdcout  nAge   age  stdendl  Weight   weight  stdendl  Cash   money  currency;
+	std::cout << "How are you? (Happy = true / unhappy = false) << std::endl;
+	sdt::cin >> happy;
+		
+	stdcout  nAge   age  stdendl  Weight   weight  stdendl  Cash   money  currency << std::endl << "Happy: " << happy;
 }
